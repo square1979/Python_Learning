@@ -24,6 +24,6 @@ Python编程章节和对应的技术点概览请通过《Python编程【大纲�
   
 ## 贡献者  
   
-- [@square1979]
+- [square1979](https://github.com/square1979) 
   
 ---  
