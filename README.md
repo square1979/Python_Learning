@@ -1,6 +1,6 @@
-# Python编程学习文档  
+# Python编程学习代码集 
   
-## 第一阶段：Python基础  
+## 第一阶段：Python编程  
   
 Python编程章节和对应的技术点概览请通过《Python编程【大纲】》查看  
 
