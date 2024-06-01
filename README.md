@@ -1,9 +1,6 @@
-# Python_Learning
 # Python编程学习文档  
   
 ## 第一阶段：Python基础  
-  
-### 章节与技术点概览  
   
 Python编程章节和对应的技术点概览请通过《Python编程【大纲】》查看  
 
