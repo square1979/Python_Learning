@@ -4,12 +4,18 @@
   
 Python编程章节和对应的技术点概览请通过《Python编程【大纲】》查看  
 
-  
-### 额外资源  
-  
+### 软件资源 
+
 - [Python下载网址](https://www.python.org/downloads/)  
 - [Pycharm下载网站](https://www.jetbrains.com/pycharm/)  
 - [黑马程序员Python入门教程链接](https://www.bilibili.com/video/BV1qW4y1a7fU)
+
+### 额外资源  
+
+- [pyecharts官网](https://pyecharts.org/)
+- [pyecharts示例](https://gallery.pyecharts.org/)
+- [json视图查看](https://www.ab173.com/gongju/json/jsonviewernew.php) 
+
   
 ## 如何使用  
   
