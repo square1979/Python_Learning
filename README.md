@@ -14,7 +14,8 @@ Python编程章节和对应的技术点概览请通过《Python编程【大纲�
 
 - [pyecharts官网](https://pyecharts.org/)
 - [pyecharts示例](https://gallery.pyecharts.org/)
-- [json视图查看](https://www.ab173.com/gongju/json/jsonviewernew.php) 
+- [json视图查看](https://www.ab173.com/gongju/json/jsonviewernew.php)
+- [RGB颜色查询](https://www.ab173.com/gongju/ui/rgb.php) 
 
   
 ## 如何使用  
