@@ -1,0 +1,62 @@
+【DBeaver连接mysql时Public Key Retrieval is not allowed错误解决方法】
+【在新建连接的时候，驱动属性里设置 allowPublicKeyRetrieval 的值为 true 】
+
+1.DML：数据操作语言，用来对数据库中表的数据记录进行更新
+2.数据插入insert：
+	基础语法：insert into 表[(列1，列2，... ...，列N)] values(值1，值2，... ... 值N)[，（值1，值2，... ... 值N）,... ... (值1，值2，... ... 值N)]
+	use world;
+	show tables;
+	create table student(
+		id int,
+		name varchar(10),
+		age int
+	);
+	
+	insert into student(id) values(1),(2),(3);
+	
+	# 当传入的数据和定义数据数量一致可以省略student括号中的id name age
+	insert into student(id,name,age) values(4,'周杰伦',31),(5,'林俊杰',36);
+	insert into student values(6,'周杰',31),(7,'林杰',36);
+3.数据删除delete：
+	基础语法：delete from 表名称 where 条件判断 【条件判断：列 操作符 值】【操作符： = < > <= >= !=】
+	delete from student where id = 1 ;
+	delete from student where id < 4 ;
+	delete from student where id > 6 ;
+	delete from student where age = 36 ;
+	# 删除表中所有数据
+	delete from student ;
+4.数据更新update：
+	基础语法：update 表名 列 = 值 where 条件判断
+	insert into student(id,name,age) values(4,'周杰伦',31),(5,'林俊杰',36);
+	update student set name = '张学友' where id = 4;
+	update student set name = '王力宏' ;
+5.注意：字符串的值，出现在SQL语句中，必须用单引号包围起来
+6.课后作业：
+	（1）通过DDL定义如下表格；
+	（2）通过DML(insert)语句，向student表中插入如图所示的数据【图略】
+
+	# 1.使用数据库
+use world;
+# 2.创建student数据表，定义参数的类型
+create table student(
+	id int,
+	name varchar(3),
+	age int,
+	gender varchar(1)
+);
+# 3.通过insert语句向表中插入数据
+insert into student values(100001,'周杰伦',31,'男') ;
+insert into student values(100002,'王力宏',33,'男'),(100003,'蔡依林',35,'女'),(100004,'林志玲',36,'女'),(100005,'刘德华',33,'男'),(100006,'刘大山',10,'男'),(100007,'刘志龙',11,'男'),(100008,'王潇潇',33,'女') ,(100009,'张一梅',20,'女'),(100010,'王一倩',13,'女'),(100011,'陈奕迅',31,'男') ,(100012,'张晓光',33,'男'),(100013,'李大晓',15,'男'),(100014,'吕甜甜',36,'女'),(100015,'曾悦悦',31,'女'),(100016,'刘佳慧',21,'女'),(100017,'项羽凡',23,'男'),(100018,'刘德强',26,'男'),(100019,'王强强',11,'男'),(100020,'刘志慧',25,'女') ;
+
+
+
+
+
+
+
+
+
+
+
+
+

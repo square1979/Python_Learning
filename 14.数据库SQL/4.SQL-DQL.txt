@@ -1,0 +1,51 @@
+1.基础数据查询：
+	基础语法：select 字段列表/* from 表名称；
+	select id,name,age from student;
+	查询全部数据：select * from student;
+2.基础数据查询 —— 过滤：
+	基础语法：select 字段列表/* from where 条件判断;
+	select * from student where age > 20;
+	查询表中所有性别为男的数据：
+	select * from student where gender = '男';
+3.分组聚合：
+	select 字段/聚合函数 from 表 [where 条件] group by 列
+	查询不同性别人群的年龄平均数：
+	select gender ,avg(age) from student group by gender ;
+	当group by 写了谁 select 字段中才能出现谁，聚合函数无影响
+	聚合函数有：
+		1.sum(列)求和
+		2.avg(列)求平均数
+		3.min(列)求最小值
+		4.max(列)求最大值
+		5.count(列/*)求数量
+	一个SQL语句中可以写多个聚合
+	select gender ,avg(age),sum(age),max(age),min(age),count(*)  from student group by gender ;
+	select id ,gender ,avg(age),sum(age),max(age),min(age),count(*)  from student group by gender,id  ;
+4.排序分页 —— 结果排序：
+	基础语法：select 列/聚合函数/* from 表 where 条件判断;
+	按年龄从小到大升序排列：
+	select * from student where age >20 order by age ;
+	按年龄从大到小降序排列：
+	select * from student where age >20 order by age desc ;
+5.排序分页 —— 结果分页限制：
+	基础语法：select 列/聚合函数/* from 表 where 条件判断;
+	限制输出5条：
+	select * from student limit 5 ; 
+	限制从第十条后开始输出5条：
+	select * from student limit 10,5 ; 
+	统计年龄大于20的人群数量：
+	select age ,count(*)  from student where age >20 group by age;
+	统计年龄大于20的人群数量并按年龄从小到大排序:
+	select age ,count(*)  from student where age >20 group by age order by age ;
+	统计年龄大于20的人群数量并按年龄从小到大排序,限制输出为5条:
+	select age ,count(*)  from student where age >20 group by age order by age  limit 5 ;
+	执行顺序：from > where > group by
+	聚合函数: select > order by >limit
+
+	
+	
+	
+	
+	
+
+	
